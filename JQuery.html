@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <title>JQuery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="./index.html">Home</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./JavaScript.html">Javascript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./JQuery.html">JQuery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./NodeJS.html">NodeJS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Express.html">Express</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Tools.html">Tools</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="grid-container">
-
-        <!-- Header -->
-        <div class="item1">NodeJS Course Documentation</div>
-    
-        <!-- Sidebar -->
-        <div class="item2">
-        
-            <a href="https://rasmusknothnielsen.github.io/JavaScript.html">Javascript</a> <br>
-    
-            <a href="https://rasmusknothnielsen.github.io/JQuery.html">JQuery</a> <br>
-    
-            <a href="https://rasmusknothnielsen.github.io/NodeJS.html">NodeJS</a> <br>
-        
-            <a href="https://rasmusknothnielsen.github.io/Express.html">Express</a> <br>
-
-            <br>
-            <br>
-            <br>
-        
-            <a href="https://rasmusknothnielsen.github.io/">Frontpage</a>
-        </div>
-    
-        <!-- Main view -->
-        <div class="item3">
-            <h1>JQuery</h1>
+    <div class="container p-3 my-3 border" style="position:relative; top:5em;">
+      <h1>JQuery</h1>
 
             <h2>What is JQuery?</h2>
             <p>jQuery is a fast, small, and feature-rich JavaScript library. <br> 
@@ -45,7 +46,7 @@
             <p>Import it into your project by embedding it in the HTML Header:</p>
             <code>
                 <pre>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    &ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt&lt/script&gt
                 </pre>
             </code>
             <p>Remember to always get the newest version</p>
@@ -54,8 +55,8 @@
             <p>Remember to also import the local JQuery script that is going to be used, but adding it to the HTML Header:</p>
             <code>
                 <pre>
-                        <!-- Importing the JQuery Script-->
-                        <script src="./index.js"></script>
+                    <!-- Importing the JQuery Script-->
+                    &ltscript src="./index.js"&gt&lt/script&gt
                 </pre>
             </code>
 
@@ -205,14 +206,14 @@
             <h4>Add a paragraph inside a box</h4>
             <code>
                 <pre>
-                    $('.unused-box').append("<p>Second Sentence</p>")
+                    $('.unused-box').append("&ltp&gtSecond Sentence&lt/p&gt")
                 </pre>
             </code>
 
             <h4>Add another paragraph before the already added paragraphs</h4>
             <code>
                 <pre>
-                    $('.unused-box').prepend("<p>First Sentence</p>")
+                    $('.unused-box').prepend("&ltp&gtFirst Sentence&lt/p&gt")
                 </pre>
             </code>
 
@@ -259,7 +260,7 @@
                     var reason = 4
                     $("#submit-button").click(() => {
                         let count = $('#first-list li').length;
-                        $("#first-list").append(`<li>Reason ${count + 1} </li>`)
+                        $("#first-list").append(`&ltli&gtReason ${count + 1} &lt/li&gt`)
                 
                         //  18. Console log the parent div when the button is clicked 
                         // using a direct reference to the button inside of the event handler scope. 
@@ -267,14 +268,6 @@
                     })
                 </pre>
             </code>
-
-
-        </div> 
-
-        <!-- Footer -->
-        <div class="item4">Made in accordance to Mandatory 1 in Fullstack NodeJS course at Computer Science, KEA, 2020</div>
-    
-    </div>
-
+ </div>
 </body>
 </html>
